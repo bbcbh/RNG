@@ -146,7 +146,8 @@ import java.io.Serializable;
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
-@version 13
+ * @version 13 
+ * @deprecated  use MersenneTwisterRandomGenerator instead
  */
 // Note: this class is hard-inlined in all of its methods.  This makes some of
 // the methods well-nigh unreadable in their complexity.  In fact, the Mersenne
