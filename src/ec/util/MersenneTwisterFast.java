@@ -1,5 +1,4 @@
 package ec.util;
-import ec.util.*;
 import random.MersenneTwisterFastEngine;
 import java.io.*;
 import java.util.*;
@@ -143,6 +142,7 @@ import java.util.*;
  * POSSIBILITY OF SUCH DAMAGE.
  *
  @version 13
+ @deprecated use MersenneTwisterRandomGenerator instead
 */
 
 // Note: this class is hard-inlined in all of its methods.  This makes some of
@@ -153,7 +153,11 @@ import java.util.*;
 
 public class MersenneTwisterFast implements Serializable, Cloneable
     {
-    // Period parameters
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7144910995859733734L;
+	// Period parameters
     private static final int N = 624;
     private static final int M = 397;
     private static final int MATRIX_A = 0x9908b0df;   //    private static final * constant vector a

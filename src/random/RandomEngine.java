@@ -9,5 +9,10 @@ package random;
  * @author Ben Hui
  */
 public abstract class RandomEngine extends cern.jet.random.engine.RandomEngine  {
-    public abstract int nextInt(int b);
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7796499834289775399L;
+
+	public abstract int nextInt(int b);
 }

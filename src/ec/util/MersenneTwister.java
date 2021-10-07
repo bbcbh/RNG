@@ -145,7 +145,11 @@ import java.io.*;
 
 public class MersenneTwister extends java.util.Random implements Serializable, Cloneable
     {
-    // Period parameters
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -142104796473623769L;
+	// Period parameters
     private static final int N = 624;
     private static final int M = 397;
     private static final int MATRIX_A = 0x9908b0df;   //    private static final * constant vector a

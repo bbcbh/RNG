@@ -6,7 +6,11 @@ import org.apache.commons.math3.random.MersenneTwister;
 
 public class MersenneTwisterRandomGenerator extends RandomGenerator implements Serializable {
 
-    MersenneTwister rngApache;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -588076367683612932L;
+	MersenneTwister rngApache;
 
     public MersenneTwisterRandomGenerator(long seed) {
         rngApache = new MersenneTwister(seed);

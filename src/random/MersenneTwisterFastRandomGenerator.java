@@ -156,7 +156,11 @@ import java.io.Serializable;
 // -- Sean
 public class MersenneTwisterFastRandomGenerator extends RandomGenerator implements Serializable {
 
-    // Period parameters
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2498534667552775204L;
+	// Period parameters
     private static final int N = 624;
     private static final int M = 397;
     private static final int MATRIX_A = 0x9908b0df;   //    private static final * constant vector a
