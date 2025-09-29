@@ -11,7 +11,7 @@ public class MersenneTwisterRandomGenerator extends RandomGenerator implements S
 	 */
 	private static final long serialVersionUID = -588076367683612932L;
 	MersenneTwister rngApache;
-
+	
     public MersenneTwisterRandomGenerator(long seed) {
         rngApache = new MersenneTwister(seed);
     }
@@ -38,17 +38,21 @@ public class MersenneTwisterRandomGenerator extends RandomGenerator implements S
 
     @Override
     public int nextInt() {
-        return rngApache.nextInt();
+    	int ent = rngApache.nextInt();     	
+        return ent;
     }
 
     @Override
     public int nextInt(int i) {
-        return rngApache.nextInt(i);
+    	int ent = rngApache.nextInt(i);
+		return ent;
     }
 
+    
     @Override
-    public long nextLong() {
-        return rngApache.nextLong();
+    public long nextLong() {    	
+    	long ent = rngApache.nextLong();   
+        return ent;
     }
 
     @Override
@@ -58,12 +62,14 @@ public class MersenneTwisterRandomGenerator extends RandomGenerator implements S
 
     @Override
     public float nextFloat() {
-        return rngApache.nextFloat();
+    	float ent = rngApache.nextFloat();    
+        return ent;
     }
 
     @Override
     public double nextDouble() {
-        return rngApache.nextDouble();
+    	double ent = rngApache.nextDouble();  
+        return ent;
     }
 
     @Override
